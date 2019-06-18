@@ -217,3 +217,15 @@
 		color:_palette(accent4)
 	}
 
+	#main {
+		.subtitle {
+			text-align:center;
+			font-weight:bold;
+		}
+		.tech, .category {
+			// font-weight: bold;
+			text-align: center;
+			font-style: italic;
+			color:_palette(accent6);
+		}
+	}
