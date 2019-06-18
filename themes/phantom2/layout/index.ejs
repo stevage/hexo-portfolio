@@ -1,0 +1,51 @@
+<header id="index-header">
+    <div style="position: relative">
+        <div class="img-container">
+            <img src="<%- theme.header_bg %>" >
+        </div>
+        <div class="header-text">
+            <h1>MAPS, DATA &amp; VIS</h1>
+            <h2>How can I help?</h2>
+        </div>
+    </div>
+</header>
+
+<section class="tiles">
+    <article>
+        <h2>Vector tile infrastructure</h2>
+        <div class="content">
+            <p>Building automatic data processing pipelines from non-standard open data on the web to optimised, data-rich vector tiles.</p>
+            <p class="techs">Tech: Ubuntu, NodeJS, PostGIS, Tippecanoe</p>
+        </div>
+    </article>
+    <article>
+        <h2>Front-end data vis magic</h2>
+        <div class="content">
+            <p>Complex Mapbox web maps with multi-layered choropleths and point maps and highly interactive data visualisations.</p>
+            <p class="techs">Tech: Mapbox-GL-JS, VueJS, D3, Tableau.</p>
+
+        </div>
+    </article>
+    <article>
+        <h2>Expert advice</h2>
+        <div class="content">
+            <p>Over 10 years' experience in open data, data interoperability, and research data sharing. I've worked in academia, government, private sector and non-profits, covering data sharing from pretty much every angle. I can advise on using or producing open data, developing data standards, or how to approach a data or mapping problem.</p>
+
+        </div>
+    </article>
+</section>
+
+<h1>Past projects</h1>
+<section class="tiles">
+    <% page.posts.forEach(function(item, index){ %>
+        <%- partial('_partial/article-index', {item: item, index: index}) %>
+    <% }); %>
+</section>
+
+<%- partial('_partial/pagination') %>
+
+<section>
+<h1>Contact</h1>
+<h2>Think I might be of service? Drop me a line at <a href="mailto:me@stevebennett.me">me@stevebennett.me</a><h2>
+<h2>Sometimes I blog at <a href="https://stevebennett.me">stevebennett.me</a></h2>
+</section>
